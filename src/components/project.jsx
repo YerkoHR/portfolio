@@ -51,22 +51,19 @@ const Section3 = styled.div`
     color: ${props => props.theme.contrast};
   }
 `;
-export default ({ project }) => (
+export default ({ project, language }) => (
   <Project>
     <div>
       <Section1>
         <div>{Folder}</div>
         <Subsection1>
-          <div>{Github}</div>
-          <div>{Link}</div>
+          <div title="Repository">{Github}</div>
+          <div title="Live demo">{Link}</div>
         </Subsection1>
       </Section1>
       <Section2>
         <h1>{project.name}</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-          dignissimos?
-        </p>
+        <p>{language ? project.decriptionEN : project.descriptionES}</p>
       </Section2>
     </div>
     <Section3>

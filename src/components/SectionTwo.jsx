@@ -9,13 +9,13 @@ const Projects = styled.div`
   grid-gap: 15px 15px;
 `;
 
-export const SectionTwo = ({ StyledTitle, projects }) => (
+export const SectionTwo = ({ StyledTitle, projects, language }) => (
   <Section>
     <div id="section2">
-      <StyledTitle>Projects</StyledTitle>
+      <StyledTitle>{language ? "Projects" : "Projectos"}</StyledTitle>
       <Projects>
         {projects.map((project, index) => (
-          <Project key={index} project={project} />
+          <Project key={index} project={project} language={language} />
         ))}
       </Projects>
     </div>

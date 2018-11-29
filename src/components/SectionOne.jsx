@@ -17,17 +17,14 @@ const SkillContainer = styled.ul`
   max-height: 6em;
 `;
 
-export const SectionOne = ({ StyledTitle, StyledP, skills }) => (
+export const SectionOne = ({ StyledTitle, StyledP, skills, language }) => (
   <Section>
     <div id="section1">
-      <StyledTitle>About me</StyledTitle>
+      <StyledTitle>{language ? "About me" : "Sobre mi"}</StyledTitle>
       <StyledP>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minus
-        aliquid sunt commodi adipisci dolores natus iste atque exercitationem
-        temporibus voluptatem ut, neque magnam hic necessitatibus amet ratione
-        porro laborum consectetur accusantium omnis placeat illum eveniet
-        facere. Magnam atque voluptatibus earum. Officia cumque cupiditate quos
-        repellendus neque ratione quia. Labore.
+        {language
+          ? "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minusdmld"
+          : ""}
       </StyledP>
       <SkillContainer>
         {skills.map((skill, index) => (

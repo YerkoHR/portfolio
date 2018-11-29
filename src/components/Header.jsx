@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 
 const StyledHeader = styled.header`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 2em 1em;
   counter-reset: item 0;
 `;
@@ -50,14 +50,41 @@ const HeaderLi = styled.li`
     margin-right: 0.3em;
   }
 `;
-export const Header = ({ scrollTo }) => (
+const LangBtns = styled.div`
+  align-self: center;
+  margin-left: 1em;
+  button {
+    background-color: #1b7397;
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    padding: 0.8em 1em;
+    margin-right: 0.2em;
+    transition: 0.3s ease-in-out;
+    border: 0;
+    &:hover {
+      color: ${props => props.theme.contrast};
+      opacity: 0.85;
+    }
+  }
+`;
+
+export const Header = ({ scrollTo, changeLang, language }) => (
   <StyledHeader id="header">
+    <LangBtns>
+      <button onClick={() => changeLang(true)}>EN</button>
+      <button onClick={() => changeLang(false)}>ES</button>
+    </LangBtns>
     <HeaderUl>
       <HeaderLi delay={0.4}>
-        <button onClick={() => scrollTo("section1")}>About</button>
+        <button onClick={() => scrollTo("section1")}>
+          {language ? "About" : "Sobre mi"}
+        </button>
       </HeaderLi>
       <HeaderLi delay={0.6}>
-        <button onClick={() => scrollTo("section2")}>Projects</button>
+        <button onClick={() => scrollTo("section2")}>
+          {language ? "Projects" : "Projectos"}
+        </button>
       </HeaderLi>
       <HeaderLi delay={0.8}>
         <a
