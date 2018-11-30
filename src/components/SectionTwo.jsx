@@ -12,7 +12,7 @@ const Projects = styled.div`
 export const SectionTwo = ({ StyledTitle, projects, language }) => (
   <Section>
     <div id="section2">
-      <StyledTitle>{language ? "Projects" : "Projectos"}</StyledTitle>
+      <StyledTitle>{language ? "Projects" : "Proyectos"}</StyledTitle>
       <Projects>
         {projects.map((project, index) => (
           <Project key={index} project={project} language={language} />

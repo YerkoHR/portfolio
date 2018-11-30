@@ -83,7 +83,7 @@ export const Header = ({ scrollTo, changeLang, language }) => (
       </HeaderLi>
       <HeaderLi delay={0.6}>
         <button onClick={() => scrollTo("section2")}>
-          {language ? "Projects" : "Projectos"}
+          {language ? "Projects" : "Proyectos"}
         </button>
       </HeaderLi>
       <HeaderLi delay={0.8}>

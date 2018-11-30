@@ -23,8 +23,15 @@ export const SectionOne = ({ StyledTitle, StyledP, skills, language }) => (
       <StyledTitle>{language ? "About me" : "Sobre mi"}</StyledTitle>
       <StyledP>
         {language
-          ? "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minusdmld"
-          : ""}
+          ? `I'm a self-taught front-end developer who enjoys to learn new ways
+            to make better apps, I'm very detallist and I like to always find
+            the best solution for a determined problem.
+            Here's a list of tools and technologies I have experience with:`
+          : `Soy un desarrollador front-end autodidacta, disfruto de aprender nuevas formas 
+            de crear mejores aplicaciones, Soy muy detallista y me gusta aplicar 
+            la mejor solucion para cada problema concreto.
+            Aqui hay una lista de las herramientas y tecnologias en las que tengo experiencia: 
+          `}
       </StyledP>
       <SkillContainer>
         {skills.map((skill, index) => (

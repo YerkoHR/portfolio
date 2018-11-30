@@ -79,23 +79,42 @@ class App extends Component {
     super();
     this.state = {
       english: true,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Git", "Gatsby"],
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Redux",
+        "Git",
+        "Gatsby",
+        "GraphQL"
+      ],
       projects: [
         {
           name: "Reddit Viewer",
-          techs: ["HTML", "CSS"],
-          live: "",
-          repo: "",
-          descriptionEN: "",
-          descriptionES: ""
+          techs: ["React", "Redux", "Antd "],
+          live: "https://yerkohr.github.io/reddit-viewer/",
+          repo: "https://github.com/YerkoHR/reddit-viewer",
+          descriptionEN: `App that imitates the core functions of Reddit with a simple design, 
+                          currently the app allows you to: search, filter, save posts and subreddits, 
+                          check popular coments, pagination, etc.`,
+          descriptionES: `Aplicación que imita las principales funciones de Reddit con un simple diseño,
+                          por el momento la aplicación te permite utilizar functiones tales como: buscar,
+                          filtrar, guardar posts y subreddits, visualizar comentarios populares, paginación, etc.`
         },
         {
           name: "DC Index",
-          techs: ["HTML", "CSS"],
-          live: "",
-          repo: "",
-          descriptionEN: "",
-          descriptionES: ""
+          techs: ["React", "GraphQL", "Gatsby", "Netlify CMS", "SASS"],
+          live: "https://dark-continent-index.netlify.com/",
+          repo: "https://github.com/YerkoHR/Dark-continent-index",
+          descriptionEN: `Index of every character of the popular manga 'HXH', 
+                          built with the static site generator 'Gatsby', I also 
+                          integrated Netlify CMS for easy addition of content. The core
+                          funcionalities are: filters and tags to easily search through every character.`,
+          descriptionES: `Indice de cada personaje del popular manga 'HXH', construido
+                          con el generador de sitios estaticos 'Gatsby', También implemente 
+                          Netlify CMS para simplificar la adición de contenido. Las principales
+                          funciones incluyen: filtros y etiquetas para facilitar la busquedad de cada personaje.`
         }
       ]
     };
