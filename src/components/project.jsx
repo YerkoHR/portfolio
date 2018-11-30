@@ -16,6 +16,9 @@ const Project = styled.div`
   &:hover {
     transform: translateY(-5px);
   }
+  @media (max-width: 360px) {
+    padding: 1em;
+  }
 `;
 const Section1 = styled.div`
   display: flex;
@@ -46,9 +49,15 @@ const Section2 = styled.div`
   }
 `;
 const Section3 = styled.div`
+  display: flex;
+  flex-flow: row wrap;
   span {
     margin-right: 1em;
     color: ${props => props.theme.contrast};
+  }
+  @media (max-width: 360px) {
+    display: flex;
+    flex-flow: row wrap;
   }
 `;
 export default ({ project, language }) => (

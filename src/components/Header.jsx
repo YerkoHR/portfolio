@@ -22,6 +22,10 @@ const HeaderUl = styled.ul`
     margin-top: 4em;
     justify-content: center;
   }
+  @media (max-width: 360px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const NavAnimation = keyframes`
   from{
@@ -60,6 +64,9 @@ const HeaderLi = styled.li`
   }
   @media (max-width: 640px) {
     margin: 0 1em;
+  }
+  @media (max-width: 360px) {
+    margin-bottom: 1em;
   }
 `;
 const LangBtns = styled.div`

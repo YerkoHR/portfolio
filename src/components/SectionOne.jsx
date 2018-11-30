@@ -15,6 +15,10 @@ const SkillContainer = styled.ul`
   display: flex;
   flex-flow: column wrap;
   max-height: 6em;
+  @media (max-width: 425px) {
+    max-height: 10em;
+    padding: 0;
+  }
 `;
 
 export const SectionOne = ({ StyledTitle, StyledP, skills, language }) => (
