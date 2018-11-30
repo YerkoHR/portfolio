@@ -1,11 +1,16 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
+// min-width 640px
+
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 2em 1em;
   counter-reset: item 0;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 const HeaderUl = styled.ul`
   margin: 0;
@@ -13,6 +18,10 @@ const HeaderUl = styled.ul`
   display: flex;
   flex-direction: row;
   list-style: none;
+  @media (max-width: 640px) {
+    margin-top: 4em;
+    justify-content: center;
+  }
 `;
 const NavAnimation = keyframes`
   from{
@@ -48,6 +57,9 @@ const HeaderLi = styled.li`
     content: "0" counter(item) ".";
     color: ${props => props.theme.contrast};
     margin-right: 0.3em;
+  }
+  @media (max-width: 640px) {
+    margin: 0 1em;
   }
 `;
 const LangBtns = styled.div`
