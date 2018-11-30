@@ -16,8 +16,10 @@ const SkillContainer = styled.ul`
   flex-flow: column wrap;
   max-height: 6em;
   @media (max-width: 425px) {
-    max-height: 10em;
+    max-height: 15em;
     padding: 0;
+    margin-left: 2em;
+    align-items: flex-start;
   }
 `;
 

@@ -57,11 +57,14 @@ const StyledP = styled.p`
   font-size: 1.3em;
   margin: 2em 0;
   width: 70%;
+  @media (max-width: 425px) {
+    width: 95%;
+  }
 `;
 const ToTopBtn = styled.button`
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
