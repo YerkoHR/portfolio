@@ -87,7 +87,9 @@ class App extends Component {
         "Redux",
         "Git",
         "Gatsby",
-        "GraphQL"
+        "GraphQL",
+        "SASS",
+        "Styled Components"
       ],
       projects: [
         {

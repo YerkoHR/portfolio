@@ -57,13 +57,21 @@ export default ({ project, language }) => (
       <Section1>
         <div>{Folder}</div>
         <Subsection1>
-          <div title="Repository">{Github}</div>
-          <div title="Live demo">{Link}</div>
+          <div title="Repository">
+            <a href={project.repo} target="_blank" rel="noopener noreferrer">
+              {Github}
+            </a>
+          </div>
+          <div title="Live demo">
+            <a href={project.live} target="_blank" rel="noopener noreferrer">
+              {Link}
+            </a>
+          </div>
         </Subsection1>
       </Section1>
       <Section2>
         <h1>{project.name}</h1>
-        <p>{language ? project.decriptionEN : project.descriptionES}</p>
+        <p>{language ? project.descriptionEN : project.descriptionES}</p>
       </Section2>
     </div>
     <Section3>
