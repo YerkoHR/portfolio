@@ -99,7 +99,7 @@ class App extends Component {
                           currently the app allows you to: search, filter, save posts and subreddits, 
                           check popular coments, pagination, etc.`,
           descriptionES: `Aplicación que imita las principales funciones de Reddit con un simple diseño,
-                          por el momento la aplicación te permite utilizar functiones tales como: buscar,
+                          por el momento la aplicación te permite utilizar funciones tales como: buscar,
                           filtrar, guardar posts y subreddits, visualizar comentarios populares, paginación, etc.`
         },
         {
