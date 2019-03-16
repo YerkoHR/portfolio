@@ -92,7 +92,8 @@ class App extends Component {
         "Gatsby",
         "GraphQL",
         "SASS",
-        "Styled Components"
+        "Styled Components",
+        "Bulma"
       ],
       projects: [
         {
@@ -106,6 +107,27 @@ class App extends Component {
           descriptionES: `Aplicación que imita las principales funciones de Reddit con un simple diseño,
                           por el momento la aplicación te permite utilizar funciones tales como: buscar,
                           filtrar, guardar posts y subreddits, visualizar comentarios populares, paginación, etc.`
+        },
+        {
+          name: "Personal Dashboard",
+          techs: [
+            "React",
+            "Redux",
+            "Styled Components",
+            "Lazy Loading",
+            "Code Splitting",
+            "Drag and Drop"
+          ],
+          live: "https://personal-dashboard.netlify.com/",
+          repo: "https://github.com/YerkoHR/Personal-dashboard",
+          descriptionEN: `Personal SPA that let you search videos and create playlists using the Youtube API, 
+                          you can also create a record of your favorite TV shows to manage 
+                          the amount of episodes watched and asign states like: 'Watching',  'Planning to watch', 
+                          'Completed', etc.`,
+          descriptionES: `Personal SPA que te permite buscar videos y crear playlists usando Youtube API,
+                          también puedes crear un registro de series de TV para gestionar la cantidad de capitulos
+                          vistos y asignar estados como: 'Watching',  'Planning to watch', 
+                          'Completed', etc., `
         },
         {
           name: "DC Index",
